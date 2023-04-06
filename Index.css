@@ -1,0 +1,163 @@
+#Accueil{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    background: url("./Img/fond.jpg") fixed center/cover no-repeat;
+}
+#Projet{
+    padding: 100px ;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+button:hover{
+    background-color: white;
+    transition: 1s;
+    color: rgba(3,29,210,255);
+}
+
+i:hover,
+a:hover{
+    transition: 1s;
+    color: #11c8fb;
+}
+
+#Navbar{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns : 40% 20% 20% 20%;
+}
+.Item-Nav{
+    font-size:4rem;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+#BtnProjet{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+button{
+    display: block;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: rgba(3,29,210,255) ;
+    color: white;
+    margin: 5px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+#Navbar > a{
+    text-align: center;
+}
+
+#IMGJeux{
+    margin: 0 auto;
+    width: 100%;
+}
+
+#Git{
+    color: white;
+}
+.PresJeux{
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns : 50% 50%;
+}
+.Fille{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.8rem;
+}
+.Titre{
+    margin: 0 auto;
+}
+.TitrePres{
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 2rem;
+
+}
+
+#Bienvenue{
+    display: block;
+    align-items: center;
+    font-size: 4rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 1500px){
+    .PresJeux{
+        display: block;
+        width: 80%;
+    }
+    .Fille{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    button{
+        padding: 25px;
+    }
+    .Fille{
+        font-size: 1.4rem;
+    }
+    .TitrePres{
+        padding: 20px;
+        font-size: 1.6rem;
+    }
+    .PresJeux{
+        width: 80%;
+    }
+    #Bienvenue{
+        font-size: 2.5rem;
+    }
+    .Item-Nav{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 700px){
+    .TitrePres{
+        font-size: 1rem;
+    }
+    .TitrePres{
+        font-size: 1.2rem;
+    }
+    .Item-Nav{
+        padding-top: 20px;
+        padding-top: 20px;
+        font-size: 1.7rem;
+        padding-bottom: 20px
+    }
+    #BtnProjet{
+        display: block;
+    }
+    #Git{
+        font-size: 1rem;
+    }
+}
+
+
+
