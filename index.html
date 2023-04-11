@@ -1,51 +1,486 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-<title>Eportfolio</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<link rel="stylesheet" href="./Index.css">
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <script src="https://kit.fontawesome.com/0ef5e8cca6.js" crossorigin="anonymous"></script>
+
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swipper-bundle.min.css">
+    <title>Eportfolio</title>
 </head>
+
 <body>
-  <div id="Navbar">
-    <a class="Item-Nav" href="#TitreJeux">Projets</a>
-    <a class="Item-Nav" href="https://github.com/LenouvelLouis"><i class="fab fa-github fa-xl"></i></a></li>
-    <a class="Item-Nav" href="https://www.linkedin.com/in/louis-lenouvel-dev/"><i class="fa-brands fa-linkedin-in fa-xl" ></i></a>
-    <a class="Item-Nav"  href="mailto:mr.lenouvel.louis@gmail.com"><i class="fa-regular fa-envelope fa-xl"></i></a>
-</div>
-  <section id="Accueil">
-    
-        <div id="Bienvenue" >
-          <h3 class="Titre">Bienvenue sur mon Eportfolio</h3>
-          <p id="Presentation"></p>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Louis</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link ">
+                            <i class="fa-solid fa-house nav__icon"></i>
+                            Home
+
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fa-regular fa-address-card nav__icon"></i>
+                            À propos de moi
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fa-solid fa-laptop-code nav__icon"></i>
+                            Compétences
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="fas fa-briefcase nav__icon"></i>
+                            Qualification
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="fa-brands fa-github nav__icon"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-x nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <p>Nav</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/louis-lenouvel-dev/" target="_blank"
+                            class="home__social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/LenouvelLouis" target="_blank" class="home__social-icon">
+                            <i class="fa-brands fa-github "></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <img class="home__blob" src="./assets/img/computer1.jpg" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Bonjour ! <br>Je m'appelle Louis LENOUVEL.</h1>
+                        <h3 class="home__subtitle">Étudiant en deuxième année de B.U.T Informatique</h3>
+                        <p class="home__description">Présentation</p>
+                        <a href="mailto:mr.lenouvel.louis@gmail.com" class="button button--flex">
+                            Contact
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title">À propos de moi</h2>
+            <span class="section__subtitle">Mon introduction</span>
+            <div class="about__container container grid">
+                <img src="./assets/img/Computer2.jpg" alt="Img" class="anout__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        Etudiant en 2ème année en IUT d’informatique,
+                        je recherche d’un stage de 8 à 10 semaines, à partir
+                        du 3 avril 2023, dans le développement WEB/ dans
+                        la programmation afin d’approfondir mes
+                        compétences techniques .
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">02+</span>
+                            <span class="about__info-name">Années <br>d'études</span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <a dowload="" href="./assets/pdf/CV_lenouvel_louis.pdf" class="button button--flex">
+                            Download CV<i class="fa-sharp fa-solid fa-download button__icon"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Compétences</h2>
+            <span class="section__subtitle">Mon niveau technique</span>
+            <div class="skills__container container grid">
+                <div>
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <div>
+                                <h1 class="skills__titles">Logiciel</h1>
+                                <span class="skills__subtitle">2 ans</span>
+                            </div>
+                            <i class="fas fa-long-arrow-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__c"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C++</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__cpp"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <div>
+                                <h1 class="skills__titles">Web</h1>
+                                <span class="skills__subtitle">2 ans</span>
+                            </div>
+                            <i class="fas fa-long-arrow-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__php"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <div>
+                                <h1 class="skills__title">Base de données</h1>
+                                <span class="skills__subtitle">2 ans</span>
+                            </div>
+                            <i class="fas fa-long-arrow-down skills__arrow"></i>
+                        </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MYSQL</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__mysql"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section"  id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Mon parcours personnel</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="fas fa-university qualification__icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="fas fa-briefcase qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">B.U.T Informatique</h3>
+                                <span class="qualification__subtitle">Paris : IUT Paris Descartes</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2021 - 2023
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Baccalauréat</h3>
+                                <span class="qualification__subtitle">Conflans-Sainte-Honorine : Lycée Jules
+                                    Ferry</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2021
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="qualification__content" data-content id="work">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Agent technique service propreté</h3>
+                                <span class="qualification__subtitle">Sartrouville (78)</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Août 2022
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Livreur en pâtisserie et
+                                    chocolaterie</h3>
+                                <span class="qualification__subtitle">Conflans-Sainte-Honorine (78)</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Avril - Juin 2022
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Agent libre-service chez Leclerc</h3>
+                                <span class="qualification__subtitle">Conflans-Sainte-Honorine (78)</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Août 2021
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Stagiaire d'observation Informatique : Sony</h3>
+                                <span class="qualification__subtitle">Puteaux (92)</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    (2 semaines)
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Travaux les plus récents</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/Beauvais.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Website Beauvaisis</h3>
+                            <p class="portfolio__description">L’objectif de ce projet était de faire la refonte d’un
+                                site parmis une liste de sites à refondre.Nous avons choisi celui du Beauvaisis. Ce
+                                projet nous a permis de découvrir le Javascript et l'animation de site.</p>
+                            <a href="https://github.com/LenouvelLouis/WebSite-Beauvais" target="_blank" class="button button--flex button--small portfolio__button">
+                                Github<i class="fa-solid fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/6quiprend.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">6 Qui Prends Java</h3>
+                            <p class="portfolio__description">L’objectif de ce projet était de programmer un jeu
+                                intitulé « 6 qui prends » en plus d’utiliser tous types d’algorithmes qui font utiliser
+                                un grand nombre de fonctions dans le langage Java ainsi que de découvrire le language
+                                Objet.</p>
+                            <a href="https://github.com/LenouvelLouis/6-qui-prend-Java"  target="_blank" class="button button--flex button--small portfolio__button">
+                                Github <i class="fa-solid fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/demineurCpp.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Demineur cpp</h3>
+                            <p class="portfolio__description">L’objectif de ce projet était de programmer un jeu
+                                intitulé « Démineur » ou « Minesweeper » (en Anglais) en plus d’utiliser tous types
+                                d’algorithmes qui font utiliser un grand nombre de fonctions dans le langage C++.</p>
+                            <a href="https://github.com/LenouvelLouis/Demineur-CPP" target="_blank" class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="fa-solid fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/demineurVB.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Demineur VB</h3>
+                            <p class="portfolio__description">L’objectif de ce projet était de programmer un jeu
+                                intitulé « Démineur » ou « Minesweeper » (en Anglais) en plus d’utiliser tous types
+                                d’algorithmes qui font utiliser un grand nombre de fonctions dans le langage VB.NET</p>
+                            <a href="https://github.com/LenouvelLouis/Demineur-VB.NET" target="_blank" class="button button--flex button--small portfolio__button">
+                                Github
+                                <i class="fa-solid fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fa-solid fa-angle-right swiper-button-icon"></i>
+                </div>
+                <div class="swiper-button-prev swiper-button-icon">
+                    <i class="fa-solid fa-angle-left swiper-button-icon"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Louis</h1>
+                    <span class="footer__subtitle">Étudiant en deuxième année de B.U.T Informatique</span>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#qualification" class="footer__link">Qualification</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Compétences</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/louis-lenouvel-dev/" target="_blank" class="footer__social">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/LenouvelLouis" target="_blank" class="footer__social">
+                        <i class="fa-brands fa-github "></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Bedimcode. All right reserved</p>
         </div>
-    </section>
-    <section id="Projet">
-      <div id="BtnProjet">
-        <button id="6quiprend">6 Qui Prends</button>
-        <button id="DemineurCPP" >Demineur CPP</button>
-        <button id="Beauvais" >WebSite Beauvais</button>
-        <button id="DemineurVB" >Demineur VB.NET</button>
-      </div>
-      <h1 class="TitrePres" id="TitreJeux"></h1> 
-      <div class="PresJeux">
-            <div class="Fille">
-              <h1 id="Type" class="TitrePres"></h1>
-            <img src="./Img/6quiprend.jpg" id="IMGJeux">
-          </div>
-          <div class="Fille">
-                <p id="Description"></p>
-                <p id = "Complement"></p>
-                <h4 class="TitreJeux"></h4>
-                <h4 class="TitreJeux">Lien GitHub : </h4>
-                <a href="https://github.com/LenouvelLouis/6-qui-prend-Java" id="Git"><i class="fab fa-github fa-9x"></i></a>
-              </div>
-          </div>
-        </div>
-    </section>
-      <script src="./Presentation.js"></script>
-      <script src="./Jeux.js"></script>
-      <script src="https://kit.fontawesome.com/0ef5e8cca6.js" crossorigin="anonymous"></script>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+
+    <!--==================== JS ====================-->
+    <script type="text/javascript" src="./assets/js/swipper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
